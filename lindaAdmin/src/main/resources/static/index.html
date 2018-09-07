@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/userDefined/userLogin.css">
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+<button id="user-login-button" class="btn btn-default btn-sm">登录</button>
+<div class="user-login">
+	<div class="user-login-top">
+		<button id="closeLogin" type="button" class="close close-login" aria-label="Close" onfocus="this.blur();"><span aria-hidden="true">&times;</span></button>
+	</div>
+	<div class="user-login-center">
+		<form id="form" style="padding-top: 20px;">
+				
+				<div>
+					<label for="userName">用户名:</label>
+					<input type="text" name="userName" id="userName" placeholder="请输入用户名"/>
+				</div>
+			
+				<div style="margin-top: 20px;">
+					<label for="password">密　码:</label>
+					<input type="password" name="userPassword" id="userPassword" placeholder="请输入密码" />
+				</div>
+			
+			<div style="margin-top: 15px;">
+				<div style="width: 50%;float: left;text-align: center;">
+					<input type="button" id="login" class="btn btn-success btn-sm" value="登录"/>
+				</div>
+				<div style="text-align: center;">
+					<input id="cancleLogin" type="button" style="background-color: #CACACD" class="btn btn-sm" value="取消"/>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<div>
+</div>
+</body>
+ <script type="text/javascript" src="js/userDefined/userLogin.js"></script>
+</html>

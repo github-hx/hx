@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="starter.user.dao.UserDao">
+	<insert id="login" parameterType="user">
+		UPDATE  userLogin
+		SET  userIp = #{userIp}, userAddress = #{userAddress},userDate = #{userDate}
+		WHERE   (userName = #{userName}) AND (userPassword = #{userPassword})
+	</insert>
+	
+	<select id="selectUserByUserName" parameterType="java.lang.String" resultType="user">
+		SELECT  userId, userName, userPassword, userIp, userAddress, userDate
+		FROM      userLogin
+		WHERE   (userName = #{userName})
+	</select>	
+</mapper>
